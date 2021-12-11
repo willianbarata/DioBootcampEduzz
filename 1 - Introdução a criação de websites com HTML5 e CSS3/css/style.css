@@ -1,3 +1,12 @@
+body {
+  background: #ccc;
+}
+
+#imgcodigo {
+  height: 40%;
+  width: 40%;
+}
+
 #title,
 .subtitle,
 .post_title {
@@ -7,4 +16,11 @@
 .post_title {
   font-size: 16;
   font-style: italic;
+}
+
+.post {
+  background: white;
+  padding: 10px;
+  border: 3px solid #000;
+  margin: 10px;
 }
