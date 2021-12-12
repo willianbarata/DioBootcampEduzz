@@ -25,3 +25,16 @@ var o7 = "Gato" || false;       //t || f retorna Gato
 var n1 = !true;     // !t retorna false
 var n2 = !false;    // !f retorna true   
 var n3 = !"Gato";   // !t retorna false
+
+//true
+" " 
+1
+['teste']
+
+//false
+""
+0
+//[]
+
+//conversão para boleano
+//!!
