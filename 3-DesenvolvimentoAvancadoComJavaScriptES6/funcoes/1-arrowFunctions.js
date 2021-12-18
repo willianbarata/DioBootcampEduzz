@@ -35,3 +35,16 @@ console.log(sumB(5,8));
 //se existir apenas um argumento, não é necessário os parênteses
 
 var sumC = a => a +8;
+
+//obj
+
+var createObj = () => ({ teste: 123});
+
+console.log(createObj());
+
+//função construtora
+function Car(){
+    this.foo = 'bar'
+}
+
+console.log(new Car());
