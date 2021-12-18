@@ -42,3 +42,45 @@ const arr4 = [8, 8, 8, ...arr];
 console.log(arr3);
 console.log(arr4);
 
+//unindo objetos com spreed operator
+
+const obj = {
+    test: 123
+};
+
+const obj2 = {
+    ...obj,
+    teste: 'Olá'
+};
+
+console.log(obj2);
+
+//tomar cuidado com cópia de objeto razo, pois se o primeiro objeto tiver um subobjeto, essa propriedade será alterada
+
+//forma incorreta
+const obj8 = {
+    test: 123,
+    subObj: {
+        test: 123
+    }
+}
+
+const obj9 = { ...obj8}
+
+obj8.subObj.test = 456;
+
+console.log(obj8);
+
+//forma correta
+const obj5 = {
+    test: 123,
+    subObj: {
+        test: 123
+    }
+}
+
+const obj6 = { ...obj5, subObj: { ...obj.subObj}}
+
+obj6.subObj.test = 456;
+
+console.log(obj5);
