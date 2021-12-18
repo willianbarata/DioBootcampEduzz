@@ -21,3 +21,5 @@ if(A < 0 ){
       console.log(  "Sao Multiplos"  );                   //complete com a sua lógica
   else 
       console.log(     "Nao sao Multiplos"    );
+
+      //teste
