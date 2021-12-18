@@ -21,3 +21,12 @@ function sumNova(...args){
 }
 
 console.log(sumNova(5,5,5,2,3));
+
+
+//pegando argumentos restantes
+
+const resto = (a,b, ...rest) => {
+    console.log(a,b, rest);
+}
+
+console.log(resto(5,5,2,3,6));
