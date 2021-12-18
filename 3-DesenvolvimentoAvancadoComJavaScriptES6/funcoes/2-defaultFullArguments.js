@@ -10,3 +10,15 @@ function multiply(a,b = 1){
     return a*b;
 }
 
+//lazy evaluation
+
+function randomNumber(){
+    console.log('Generating a random number');
+    return Math.random() * 10;
+}
+
+function multiplicacaoRandom(a, b = randomNumber()){
+    return a * b;
+}
+console.log(multiplicacaoRandom(4));
+console.log(multiplicacaoRandom(4));
