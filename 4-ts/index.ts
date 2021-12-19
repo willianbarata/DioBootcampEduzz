@@ -5,16 +5,32 @@ function soma(a: number, b: number){
 interface IAnimal {
     nome: string;
     tipo: 'terrestre' | 'aquatico';
-    executarRugido(alturaEmDecibeis: number): void;
+   // executarRugido(alturaEmDecibeis: number): void;
+}
+
+interface ICanino extends IAnimal{
+    porte: 'pequeno' | 'medio' | 'grande';
 }
 
 interface IFelino extends IAnimal {
     visaoNoturna: boolean;
 }
 
+type IDomestico = IFelino | ICanino;
+//type IDomestico = IFelino & ICanino;
+
+const domestico: IDomestico = {
+    nome: 'cachorro',
+    porte: 'medio',
+    tipo: 'terrestre',
+    visaoNoturna: true    
+}
+
+
+
 const animal: IAnimal = {
     nome: 'Elefante',
     tipo: "terrestre",
-    executarRugido: (alturaEmDecibeis) => (`${alturaEmDecibeis} Db`)
+   // executarRugido: (alturaEmDecibeis) => (`${alturaEmDecibeis} Db`)
 }
 
