@@ -41,3 +41,20 @@ Task Runners e Bundler Sizers
 criar projeto
 
 npm install --save react@16.8.6 react-dom@16.8.6 react-scripts@3.0.1
+
+O que é JSX
+const element = <h1> Olá </h1>
+
+Nem Html e nem uma string
+
+React não separa as tecnologias colocando marcação em arquivos separados,
+e sim separa conceitos e mantém o código pouco acoplado chamando-os de 
+componentes
+Não é obrigatório a utilização do JSX
+Sintax suggar para React.createElement
+
+o Browser não interpreta o JSX, para isso é necessário um transpilador
+para que a aplicação possa entender o código. O mais utilizado é o Babel
+
+npm start
+
