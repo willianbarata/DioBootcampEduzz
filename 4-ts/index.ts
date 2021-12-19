@@ -40,3 +40,11 @@ input.addEventListener('input', (event) => {
     const i = event.currentTarget as HTMLInputElement;
     console.log(i.value);
 });
+
+//Generic types
+function adicionandoApendiceALista<T>(array: any[], valor: T){
+    return array.map(item => item + valor);
+}
+
+adicionandoApendiceALista([1,2,3], 1);
+adicionandoApendiceALista(['1','2','3'], '1');
