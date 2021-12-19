@@ -66,3 +66,26 @@ function redirecione(usuario: IUsuario | IAdmin){
     //redireciono usuario
 }
 
+
+interface Dog {
+    nome: string;
+    idade: number;
+    parque?: string;
+}
+
+type DogSomenteLeitura = {
+    +readonly [K in keyof Dog]-?: Dog[K];
+}
+
+class meuDog implements Dog {
+
+nome;
+idade;
+parque?: string;
+
+    constructor(nome,idade,parque){
+        this.nome = nome;
+        this.idade = idade;
+        this.parque = parque;
+    }
+}
