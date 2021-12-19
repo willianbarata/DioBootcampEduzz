@@ -48,3 +48,21 @@ function adicionandoApendiceALista<T>(array: any[], valor: T){
 
 adicionandoApendiceALista([1,2,3], 1);
 adicionandoApendiceALista(['1','2','3'], '1');
+
+//condicionais a partir de parâmetros
+interface IUsuario {
+    id: string;
+    email: string;
+}
+
+interface IAdmin extends IUsuario {
+    cargo: 'Gerente' | 'Coordenador' | 'Supervisor';
+}
+
+function redirecione(usuario: IUsuario | IAdmin){
+    if('cargo' in usuario){
+        //redireciono de acordo com o cargo
+    }
+    //redireciono usuario
+}
+
