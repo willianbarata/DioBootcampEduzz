@@ -5,6 +5,7 @@ function soma(a: number, b: number){
 interface IAnimal {
     nome: string;
     tipo: 'terrestre' | 'aquatico';
+    executarRugido(alturaEmDecibeis: number): void;
 }
 
 interface IFelino extends IAnimal {
@@ -13,11 +14,7 @@ interface IFelino extends IAnimal {
 
 const animal: IAnimal = {
     nome: 'Elefante',
-    tipo: "terrestre"
+    tipo: "terrestre",
+    executarRugido: (alturaEmDecibeis) => (`${alturaEmDecibeis} Db`)
 }
 
-const felino: IFelino = {
-    nome: 'Leão',
-    tipo: "terrestre",
-    visaoNoturna: true
-}
