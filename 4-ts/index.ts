@@ -89,3 +89,20 @@ parque?: string;
         this.parque = parque;
     }
 }
+
+
+interface Gente {
+    nome: string;
+    idade: number;
+    nacionalidade: string;
+}
+
+interface Brasileiro extends Omit<Gente, 'nacionalidade'>{
+
+}
+
+const brasileiro : Brasileiro = {
+    nome: 'Pedro',
+    idade: 10
+}
+
